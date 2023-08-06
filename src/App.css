@@ -1,0 +1,70 @@
+.pageLayout{
+    height:100vh;
+    width: 100vw;
+    grid-template-areas: "cart birds birds" 
+                         "checkout birds birds";
+    display: grid;
+}
+
+.cart, .checkout {
+    border: lightgray 1px solid;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.birds, .cart, .checkout {
+    height: 100%;
+    width: 100%
+}
+
+.cart {
+    grid-area: cart;
+}
+
+.checkout {
+    grid-area: checkout;
+}
+
+.checkout form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.birds {
+    grid-area: birds;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.birdCard {
+    width: 200px;
+    height: 350px;
+    background-color: paleturquoise;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 3px 5px 5px lightgray;
+}
+
+.birdCard h5 {
+    text-align: center;
+}
+
+.birdCard img{
+    width: 150px;
+}
+
+.birdCard button {
+    margin-top: 20px;
+}
+
+/* Cart */
